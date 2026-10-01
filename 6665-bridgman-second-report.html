@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Performance Report — 6665 Bridgman Street | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;
+--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;
+--red:#B5543C;--rose:#D4886F;--green:#4E8C6A;--slate:#6B7C8C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;font-weight:400;font-size:16.5px;line-height:1.68}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.5rem;line-height:1.1;margin:0 0 .4rem}
+h2{font-size:1.8rem;line-height:1.2;margin:0 0 .8rem}
+h3{font-size:1.18rem;margin:1.4rem 0 .45rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+.mast{background:var(--charcoal);color:#F5F3EE;padding:28px 0 30px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto;text-align:right;line-height:1.5}
+.kicker{color:var(--gold);font-size:.9rem;margin:22px 0 4px}
+.mast h1{color:#FBFAF7;margin-top:4px}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1rem}
+.rec{background:var(--teal);color:#fff;padding:32px 0 30px}
+.rec h2{color:#fff;font-size:1.5rem;margin-bottom:.3rem}
+.rec .lead{color:#D6EDEA;max-width:70ch;margin-bottom:24px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.28);border-radius:10px;overflow:hidden}
+.step{background:var(--teal);padding:20px}
+.step .k{font-size:.82rem;color:#CDE8E5;margin-bottom:6px}
+.step .v{font-family:'Cormorant Garamond',serif;font-size:2.4rem;line-height:1;color:#fff}
+.step .n{font-size:.87rem;color:#CDE8E5;margin-top:7px;line-height:1.45}
+.step:first-child{background:var(--teal-deep)}
+section{padding:38px 0;border-top:1px solid var(--line)}
+.snum{color:var(--teal-deep);font-size:.9rem;margin:0 0 .2rem}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin:0 0 20px}
+.fact{padding:14px 17px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact .k{font-size:.79rem;color:var(--muted);margin-bottom:2px}
+.fact .v{font-weight:600;color:var(--strong)}
+.confirm{color:#8A6D0B;background:#FBF3D8;padding:1px 7px;border-radius:4px;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 20px}
+.st{background:#fff;padding:18px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.warn{color:var(--red)}
+.st .k{font-size:.85rem;color:var(--muted);margin-top:5px;line-height:1.45}
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;border-radius:0 8px 8px 0;margin:0 0 22px}
+.pull p:last-child{margin-bottom:0}
+.anchor{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:10px;padding:22px 26px;margin:0 0 22px}
+.anchor h3{margin-top:0;font-size:1.3rem}
+.anchor .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin:14px 0 0}
+.anchor .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.anchor .row b{color:var(--teal-deep)}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 24px;margin:0 0 20px}
+.box h3{margin-top:0}
+.box p:last-child{margin-bottom:0}
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 14px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 17px}
+.dbody > *:last-child{margin-bottom:0}
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;background:#fff;min-width:680px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+tr.gold td{background:#FBF3D8}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.86rem;padding-top:9px}
+.pill{display:inline-block;font-size:.77rem;padding:2px 8px;border-radius:20px;font-weight:500}
+.fast{background:#DFF0EC;color:#00625B}.slow{background:#F6E3DE;color:#8A3B26}
+.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.chart h3{margin:0 0 4px}
+.chart .cap{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+.bar{display:grid;grid-template-columns:190px 1fr;gap:13px;align-items:center;margin-bottom:11px;font-size:.9rem}
+.track{background:var(--panel);border-radius:4px;height:26px;overflow:hidden}
+.fill{height:26px;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-weight:600;font-size:.85rem;white-space:nowrap}
+.fill.t{background:var(--teal)}.fill.g{background:var(--gold)}.fill.r{background:var(--red)}.fill.s{background:var(--slate)}.fill.gr{background:var(--green)}
+.src{font-size:.85rem;color:var(--muted);margin:14px 0 0;padding-top:13px;border-top:1px solid var(--line)}
+footer{background:var(--charcoal);color:#B8B2A8;padding:30px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+footer a{color:#8FD2CB}
+@media(max-width:720px){body{font-size:16px}h1{font-size:1.95rem}h2{font-size:1.45rem}.steps{grid-template-columns:1fr}.anchor .grid{grid-template-columns:1fr}.mast .tag{margin-left:0;width:100%;text-align:left}.bar{grid-template-columns:120px 1fr;font-size:.82rem}}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+<style>
+.cf{color:#8A6D0B;background:#FBF3D8;padding:1px 8px;border-radius:4px;font-weight:600}
+.flag{background:#FBEDE9;border-left:4px solid var(--red);border-radius:0 9px 9px 0;padding:20px 24px;margin:0 0 20px}
+.flag h3{margin-top:0;color:#8A3B26}
+.flag p:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Report 2 of an ongoing series<br>Issued October 1, 2026</span>
+    </div>
+    <p class="kicker">Marketing Performance Report · Week Two</p>
+    <h1>6665 Bridgman Street</h1>
+    <p class="sub">Orlando, FL 32827 · Laureate Park, Lake Nona · 5 bed / 4.5 bath · 3,567 sq ft · Detached garage apartment</p>
+  </div>
+</header>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Where we stand</h2>
+    <p class="lead" style="margin-bottom:0">The marketing is working. Thirteen inquiries and four showings in sixteen days is real activity for a home at this price point. What we do not have is an application — and after four showings, that points to one thing. <b style="color:#fff">We are recommending a reduction to $5,150.</b></p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section style="border-top:none">
+  <p class="snum">Section One</p>
+  <h2>Activity to date</h2>
+  <div class="stats">
+    <div class="st"><div class="v">16</div><div class="k">Days on market</div></div>
+    <div class="st"><div class="v">13</div><div class="k">Inquiries received</div></div>
+    <div class="st"><div class="v">4</div><div class="k">Showings completed</div></div>
+    <div class="st"><div class="v warn">0</div><div class="k">Applications received</div></div>
+  </div>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Measure</th><th class="num">Report 1 — Sept 24</th><th class="num">Report 2 — Oct 1</th><th class="num">Change</th></tr></thead>
+    <tbody>
+      <tr><td>Days on market</td><td class="num">9</td><td class="num">16</td><td class="num">+7</td></tr>
+      <tr><td>Inquiries received</td><td class="num">9</td><td class="num">13</td><td class="num pos">+4</td></tr>
+      <tr><td>Showings completed</td><td class="num">1</td><td class="num">4</td><td class="num pos">+3</td></tr>
+      <tr><td>Applications received</td><td class="num">0</td><td class="num">0</td><td class="num">—</td></tr>
+    </tbody>
+    <caption>Showings confirmed through Rently: September 23, 24, 27 and 29.</caption>
+  </table>
+  </div>
+
+  <h3>Where the interest is coming from</h3>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Source</th><th class="num">Inquiries</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>Zillow Rental Network</td><td class="num">11</td><td>Driving almost all of the interest</td></tr>
+      <tr><td>Apartments.com</td><td class="num">1</td><td>—</td></tr>
+      <tr><td>Agent referral</td><td class="num">1</td><td>Renter not looking until December — not an active prospect</td></tr>
+    </tbody>
+    <caption>Source tracking, September 15 through October 1, 2026.</caption>
+  </table>
+  </div>
+
+  <p>Thirteen inquiries converting to four showings is a <b>31% rate</b>, which is strong. Renters are finding the listing, they like what they see, and they are asking to tour. The photography, the description and the syndication are all doing their job.</p>
+</section>
+
+<section>
+  <p class="snum">Section Two</p>
+  <h2>What prospects <em>actually told us</em></h2>
+  <p>Becky follows up personally after every showing. Here is what came back, in their words rather than ours.</p>
+
+  <div class="box">
+    <h3>Prospect one — still in contact</h3>
+    <p>Asked whether you would add a washer and dryer to the garage apartment. <b>You agreed, and we thank you for that</b> — it removes a genuine objection and we have added it to the listing.</p>
+    <p>They had planned the apartment for a family member, and that person is now unsure of their plans. They said they would be in touch. We are following up, but their own circumstances are the variable here rather than anything about the home.</p>
+  </div>
+
+  <div class="box">
+    <h3>Prospect two — chose another home</h3>
+    <p>Toured, then leased elsewhere. When asked why, they said only that the other property was a better fit. No criticism of your home, and nothing specific we can act on.</p>
+  </div>
+
+  <div class="box">
+    <h3>Prospect three — compared two of our homes and chose the other</h3>
+    <p>This one is the most useful. She toured your home and one of our Eagle Creek properties and told us she liked both. She is leaning toward the other home because it sits <b>on the golf course and has a pool</b>.</p>
+  </div>
+
+  <div class="pull">
+    <p>Read those together. Not one prospect raised the condition, the presentation or the home itself as a concern. Two of the three toured, liked it, and chose or are choosing somewhere else.</p>
+  </div>
+
+  <p>That is a <b>value comparison</b>, and it is the single most important thing in this report. A renter standing between two homes is asking which one is the better use of their money. When the other home has a pool and a golf course position, your home has to win that comparison somewhere else — and the only place left is the number.</p>
+  <p>We cannot add a pool. We cannot move the home onto a golf course. What we can do is make sure that when a renter weighs the two, yours is clearly the better value.</p>
+</section>
+
+<section>
+  <p class="snum">Section Three</p>
+  <h2>So why no applications?</h2>
+  <p>Before we point at price, we want to rule out everything else — because if the problem were elsewhere, reducing would be an expensive way to fix the wrong thing.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Possible cause</th><th>What we would see</th><th>What we actually see</th></tr></thead>
+    <tbody>
+      <tr><td>The listing is not being found</td><td>Few or no inquiries</td><td class="pos">13 inquiries in 16 days</td></tr>
+      <tr><td>The photos or description are weak</td><td>Inquiries but no showings</td><td class="pos">31% of inquiries became showings</td></tr>
+      <tr><td>The home shows poorly</td><td>Showings with negative feedback</td><td class="pos">Feedback has been positive</td></tr>
+      <tr><td>Access is difficult</td><td>Requests that never convert to tours</td><td class="pos">Four tours completed in seven days</td></tr>
+      <tr class="bad"><td><b>The price is above what this market will pay</b></td><td><b>Good traffic, strong showings, no applications</b></td><td class="bad"><b>This is what we see</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="pull">
+    <p>When a listing generates this much interest and no applications, renters are touring the home, liking it, and then deciding it is not the best use of their money at this number. That is the only explanation left standing.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Four</p>
+  <h2>There are only three levers, <em>and two of them are fixed</em></h2>
+  <p>Whether a rental leases comes down to three things, in this order.</p>
+
+  <div class="box">
+    <h3>Location — fixed, and excellent</h3>
+    <p>Laureate Park is one of the strongest rental submarkets in Central Florida. Nothing to improve and nothing working against you.</p>
+  </div>
+  <div class="box">
+    <h3>Condition — fixed, and excellent</h3>
+    <p>Your home is beautifully presented, and the showing feedback confirms it. One prospect described it as gorgeous. This is not a condition problem.</p>
+  </div>
+  <div class="box warn" style="border-left:4px solid var(--red)">
+    <h3>Price — the only lever we can actually move</h3>
+    <p>Two of the three variables are already working in your favor and cannot be improved. That leaves one, and it is the one that resolves everything else. When a home is priced correctly, location and condition do their work. When it is above the market, nothing else compensates.</p>
+  </div>
+
+  <p>This is why we are not suggesting new photographs, a different description, or more marketing spend. Those would be treating a symptom that does not exist.</p>
+</section>
+
+<section>
+  <p class="snum">Section Five</p>
+  <h2>The season is working <em>against us now</em></h2>
+  <p>Timing matters more at this point in the year than at any other, and it is the reason we would rather act this week than next month.</p>
+  <p>Rental demand in this corridor runs on the school calendar. Families relocating for the school year finished moving in August. From October into the holidays, fewer households move — and the ones who do have more homes to choose from.</p>
+  <p>A home at this size and price point already draws from a smaller pool than a typical three-bedroom. Entering the slowest stretch of the year narrows that pool further.</p>
+
+  <div class="pull">
+    <p>A price that looks competitive today looks ordinary in six weeks and expensive by December. If we are going to move, moving now is worth considerably more than moving later.</p>
+  </div>
+
+  <p>There is one more reason not to wait. A listing receives more attention in its first two weeks than at any other point in its life, because every renter actively searching sees it as new inventory. We are at the end of that window now. After this, a home that renters have already seen repeatedly stops reading as available and starts reading as passed over — and that is a much harder position to price out of.</p>
+</section>
+
+<section>
+  <p class="snum">Section Six</p>
+  <h2>What the reduction actually costs</h2>
+  <p>This is the part that makes the decision straightforward, and the number is smaller than most owners expect.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>The math</th><th class="num">Figure</th></tr></thead>
+    <tbody>
+      <tr><td>Proposed reduction</td><td class="num">$100 per month</td></tr>
+      <tr><td>Cost across a 12-month lease</td><td class="num">$1,200</td></tr>
+      <tr><td>Cost of one vacant day at the current price</td><td class="num">$173</td></tr>
+      <tr class="tot"><td>Days of vacancy the reduction has to save to pay for itself</td><td class="num">7 days</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="big">
+    <div class="n neg">Seven days</div>
+    <p>If the lower price leases this home just <b>one week sooner</b>, the reduction has paid for itself entirely. Everything beyond that week is money in your pocket.</p>
+  </div>
+
+  <p>And here is what waiting looks like, measured the only way that matters — what you actually collect over the next twelve months.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Scenario</th><th class="num">Rent</th><th class="num">Days vacant</th><th class="num">Collected over 12 months</th><th class="num">True monthly rent</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>Reduce now, leases in 25 days</td><td class="num">$5,150</td><td class="num">25</td><td class="num">$57,567</td><td class="num"><b>$4,797</b></td></tr>
+      <tr><td>Hold, leases in 45 days</td><td class="num">$5,250</td><td class="num">45</td><td class="num">$55,233</td><td class="num">$4,603</td></tr>
+      <tr class="bad"><td>Hold, leases in 60 days</td><td class="num">$5,250</td><td class="num">60</td><td class="num">$52,644</td><td class="num">$4,387</td></tr>
+    </tbody>
+    <caption>Twelve months measured from the day the home came to market. True monthly rent is total collected divided by twelve.</caption>
+  </table>
+  </div>
+
+  <p>Holding at the higher number and leasing two months from now produces a true monthly rent of <b>$4,387</b> — roughly <b>$400 a month less</b> than reducing today and leasing within four weeks. The number on the lease would be higher. The money in your account would not.</p>
+
+  <p>The sixteen days already elapsed have cost approximately <b>$2,762</b> in rent that cannot be recovered.</p>
+</section>
+
+<section>
+  <p class="snum">Section Seven</p>
+  <h2>Our recommendation</h2>
+
+  <div class="box">
+    <h3>Reduce to $5,150, effective immediately</h3>
+    <p>This is a decision we are asking you to make this week, and we would like to implement it before the weekend so the home is repriced for the strongest viewing days.</p>
+    <p>The reduction is modest by design. The activity tells us we are close — renters are touring and responding well. We are not chasing the market down; we are removing the last objection standing between a strong showing and a signed application.</p>
+  </div>
+
+  <div class="box">
+    <h3>What happens next</h3>
+    <p>We measure the following five days closely — inquiries, showings booked and showings attended. If the response is not strong enough for us to <b>choose</b> a well-qualified resident rather than accept whoever applies, we will come back to you with a further recommendation rather than letting it drift.</p>
+    <p>We will not let this home sit quietly at a number the market has already told us it will not pay.</p>
+  </div>
+
+  <p>If you would prefer to hold at the current price for another week, we understand completely and we will keep working it. We would simply want you to make that decision knowing that each additional week costs approximately <b>$1,208</b> in rent that is never recoverable — and that a week in October is worth more than a week in December.</p>
+
+  <p>Your next report arrives <b>Friday morning</b>. In the meantime, Becky will keep you updated directly as showings happen and feedback comes in.</p>
+</section>
+
+<section>
+  <p class="snum">Section Eight</p>
+  <h2>Summary</h2>
+  <ul>
+    <li><b>The marketing is working.</b> 13 inquiries and 4 showings in 16 days, with a 31% inquiry-to-showing rate.</li>
+    <li><b>Zillow is producing almost all of the interest</b> — 11 of 13 inquiries.</li>
+    <li><b>No prospect criticized the home.</b> One is weighing their own plans; two preferred another property — one of them our own Eagle Creek home, for its pool and golf course position.</li>
+    <li><b>Four showings and no applications</b> points to price, and we ruled out the alternatives before saying so.</li>
+    <li><b>You agreed to add a washer and dryer</b> to the garage apartment, which removes a real objection.</li>
+    <li>Of the three levers that lease a property, <b>location and condition are both excellent and both fixed.</b> Price is the only one we can move.</li>
+    <li>The season is turning against us, and we are at the end of the listing's strongest two weeks.</li>
+    <li><b>A $100 reduction costs $1,200 over a year and pays for itself if the home leases seven days sooner.</b></li>
+    <li>Holding and leasing in 60 days produces a true monthly rent of <b>$4,387</b> — about $400 a month below reducing now and leasing within four weeks.</li>
+    <li><b>Our recommendation: reduce to $5,150 this week.</b></li>
+  </ul>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b><br>Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · <a href="tel:4078550331">407-855-0331</a></p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">Activity figures reflect Verandah source tracking and Rently showing records for September 15 through October 1, 2026. Collected-rent figures assume a twelve-month measurement window from the date the home came to market and exclude make-ready and leasing costs. This is an opinion of value, not an appraisal.</p>
+  </div>
+</footer>
+
+</body>
+</html>
